@@ -1,0 +1,96 @@
+hr{
+   border: 1px solid var(--border-dark);
+}
+.chatControl{
+   background-color: var(--bg-main-dark);
+   padding: 5px;
+   border: 2px solid var(--border-dark);
+   border-radius: 15px;
+
+}
+
+.chatControl__menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+   height: 69px;
+   /* width: 382.5px; */
+}
+
+.chatControl__menu>*{
+   /* margin: 5px; */
+   width: 100%;
+   height: 100%;
+   
+   border-bottom: 2px solid var(--border-dark);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   color: var(--icon-collor-dark);
+}
+
+.chatControl__menu__link *{
+   width: 40%;
+   height: 40%;
+}
+
+.chatControl__search{
+   height: 69px;
+   width: 382.5px;
+   
+   display: flex;
+   justify-content: space-between;
+   margin: 5px;
+
+
+}
+
+.chatControl__search>*{
+   margin: 5px;
+   border: 2px solid var(--border-dark);
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--bg-second-dark);
+   color: var(--icon-collor-dark);
+   width: 100%;
+}
+
+.chatControl__search button {
+   width: 79px;
+}
+.chatControl__search button *{
+   width: 60%;
+   height: 60%;
+}
+
+.chatControl__archive{
+   height: 70%;
+   overflow-y: scroll;
+   /* asain */
+   scrollbar-width: thin;
+   scrollbar-color: blue orange;
+   /* asain */
+}
+
+/* asain */
+
+
+/* Works on Chrome, Edge, and Safari */
+.App *::-webkit-scrollbar {
+  width: 5px;
+}
+
+.App *::-webkit-scrollbar-track {
+  /* background: var(--alert); */
+}
+
+.App *::-webkit-scrollbar-thumb {
+ background-color: var(--selected-dark);
+  border-radius: 20px;
+  scrollbar-width: 2px;
+  /* border: 3px solid white; */
+}

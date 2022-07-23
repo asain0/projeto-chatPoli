@@ -1,0 +1,9 @@
+.PoliSelect{
+   color: var(--icon-collor-dark);
+   background-color: var(--bg-main-dark);
+   border: none;
+   margin: 0 1em;
+   padding-right: 1em;
+   width: 70%;
+}
+

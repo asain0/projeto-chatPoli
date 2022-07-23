@@ -1,0 +1,28 @@
+.theme{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.ck__theme{
+   position: absolute;
+   opacity: 0;
+}
+.ck__theme_painel{
+   /* background-color: var(--bg-second-dark); */
+   background-color: black;
+   display: flex;
+   align-items: center;
+   padding: 4px;
+   border-radius: 50px;
+   height: 26px;
+   width: 50px;
+   /* position: absolute; */
+}
+
+.ball{
+   height: 21px;
+   width: 21px;
+   background-color: var(--icon-collor-dark);
+   border-radius: 50%;
+   /* position: absolute; */
+}

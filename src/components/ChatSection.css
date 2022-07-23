@@ -1,0 +1,6 @@
+section{
+   background-color: var(--bg-second-dark);
+   display: flex;
+   padding: 18px;
+   width: 95%;
+ }

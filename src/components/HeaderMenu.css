@@ -1,0 +1,107 @@
+.less{
+   width: 10% !important;
+}
+
+.headerMenu{
+   display: flex;
+   justify-content: center;
+   /* height: 58px; */
+   height: 8vh;
+}
+
+.headerMenu__logo{
+   /* width: 65px; */
+   width: 5%;
+   background-color: var(--bg-main-dark);
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+}
+
+.headerMenu__logo img{
+   height: 70%;
+   
+}
+
+.statusbar{
+   background-color: var(--bg-main-dark);
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid var(--border-dark);
+   align-items: center;
+   width: 95%;
+}
+.polichat {
+height: 80%;
+align-self: center;
+margin-left: 0.5rem;
+}
+
+.statusbar__appName{
+   display: flex;
+}
+
+.statusbar__depto{
+   display: flex;
+   justify-content: space-between;
+}
+
+.statusbar__depto__profile{
+   height: 2em;
+   width: 2em;
+   background-color: var(--border-dark);
+   border-radius: 50%;
+   /* padding: 10%; */
+   margin: auto;
+   font-weight: bold;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.statusbar__whatsapp{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.statusbar__whatsapp *{
+   color: greenyellow;
+}
+
+.statusbar__chanels *{
+   height: 25px;
+}
+
+.statusbar__promo{
+   display: flex;
+}
+
+.statusbar__promo__button{
+   color: white;
+   background-color: #fccf58;
+   border: none;
+   border-radius: 5px;
+   height: 40px;
+   width: 148.5px;
+   margin: auto;
+   font-size: 16px;
+
+
+}
+
+.statusbar__connect{
+   display: flex;
+}
+
+.statusbar__remoteAccess{
+   display: flex;
+}
+
+.statusbar__autofalante{
+   display: flex;
+}
+.statusbar__theme{
+   display: flex;
+}
+

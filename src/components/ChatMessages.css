@@ -1,0 +1,11 @@
+.chat__messages{
+   /* height: 469.5px; */
+   height: 70%;
+   width: 100%;
+   /* background-image: url("../img/whatswallpaper.png"); */
+   background-color: var(--bg-second-dark);
+   border-top: 1px solid var(--border-dark);
+   border-bottom: 1px solid var(--border-dark);
+   background-image: url("../img/whatswallpaper.png");
+   opacity: 20%;
+}
