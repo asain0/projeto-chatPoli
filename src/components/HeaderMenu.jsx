@@ -12,6 +12,30 @@ import PoliSelect from './Poliselect.jsx'
 import './HeaderMenu.css'
 
 function HeaderMenu() {
+   const departamentos = [{
+      idDpto:0,
+      nome:'Poli'
+   },
+   {
+      idDpto:1,
+      nome:'Asain'
+   }
+]
+
+   const canais =[
+      {
+         idCanal: 0,
+         nome: 'SDR0001'
+      },
+      {
+         idCanal: 1,
+         nome: 'SDR0002'
+      },
+      {
+         idCanal: 0,
+         nome: 'SDR0003'
+      }
+   ]
    return ( 
       <nav className='headerMenu'>
          <a className="headerMenu__logo" href="https://polichat.com.br/" >
@@ -21,17 +45,18 @@ function HeaderMenu() {
             <img className='polichat' src={polichat} alt="" />
 
             <div className="statusbar__depto">
-               <PoliSelect>
-                  1
-               </PoliSelect>
+               <PoliSelect itens={departamentos}/>
             </div>
 
             <div className="statusbar__whatsapp">
-               {/* <span>@W</span> */}
                <BsWhatsapp/>
             </div>
 
-            <select className='PoliSelect less' name="" id="">
+            <div className='PoliSelect less' name="" id="">
+               <PoliSelect itens={canais}/>
+            </div>
+
+            {/* <select className='PoliSelect less' name="" id="">
                <option value="">
                   <div className="statusbar__canal">
                      <div className="statusbar__canal__info">
@@ -46,7 +71,7 @@ function HeaderMenu() {
                      </div>
                   </div>
                </option>
-            </select>
+            </select> */}
             
             <div className="statusbar__promo">
                <button className="statusbar__promo__button">Indique e ganhe</button>

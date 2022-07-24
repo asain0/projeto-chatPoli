@@ -1,29 +1,56 @@
-import './SideMenu.css'
-
 import {IoIosChatbubbles, IoMdHelpCircleOutline } from "react-icons/io";
 import {IoHomeSharp,IoBuildOutline} from "react-icons/io5";
 import {VscGraphLine } from "react-icons/vsc";
 import {BiBuildingHouse} from "react-icons/bi";
 import {BsGear} from "react-icons/bs";
 import {MdAttachMoney } from "react-icons/md";
+import Polibutton from './Polibutton';
+
+import './SideMenu.css'
 
 function SideMenu() {
    return ( 
-      <div className='x'>
-         {/* <div className="parte1"> */}
-            <ul className="parte1">
+      <div className='sideMenu'>
+            <ul className="sideMenu__pages">
+               {/* <button>teste</button> */}
                <li>
+
+               {/* <input type="radio" name="menu" id="home" />
+                  <IoHomeSharp/> */}
+
+                  <Polibutton container='sideMenu__pages' icone={
                      <IoHomeSharp/>
+                  }/>
+
+               </li>
+               <li>
+               <Polibutton container='sideMenu__pages' icone={
+                     <IoIosChatbubbles/>
+                  }/>               </li>
+               <li>
+               <Polibutton container='sideMenu__pages' icone={
+                     <VscGraphLine/>
+                  }/>               </li>
+               <li>
+               <Polibutton container='sideMenu__pages' icone={
+                     <BiBuildingHouse/>
+                  }/></li>
+               <li>
+               <Polibutton container='sideMenu__pages' icone={
+                     <BsGear/>
+                  }/>
                   </li>
-               <li><IoIosChatbubbles/></li>
-               <li><VscGraphLine/></li>
-               <li><BiBuildingHouse/></li>
-               <li><BsGear/></li>
-               <li><MdAttachMoney/></li>
-               <li><IoBuildOutline/></li>
+               <li>
+               <Polibutton container='sideMenu__pages' icone={
+                     <MdAttachMoney/>
+                  }/></li>
+               <li>
+               <Polibutton container='sideMenu__pages' icone={
+                     <IoBuildOutline/>
+                  }/></li>
             </ul>
 
-         <div className="parte2">
+         <div className="sideMenu__info">
             <div className="help"><IoMdHelpCircleOutline/></div>
             <div className="user">GH</div>
             <div className="version">

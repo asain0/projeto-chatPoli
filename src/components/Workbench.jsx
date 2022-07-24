@@ -6,7 +6,7 @@ import './Workbench.css';
 
 function Workbench() {
    return ( 
-      <main>
+      <main className='Workbench'>
          <SideMenu/>
          <ChatSection/>
       </main>

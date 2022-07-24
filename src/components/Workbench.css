@@ -12,3 +12,10 @@
    width: 95%;
  }
  
+
+ @media (min-width:1980px){
+  .Workbench{
+
+     /* width: 1980px; */
+  }
+}

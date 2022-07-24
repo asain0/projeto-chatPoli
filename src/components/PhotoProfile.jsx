@@ -4,9 +4,7 @@ import './components.css';
 
 function PhotoProfile() {
    return ( 
-      // <div>
          <img className='photoProfile' src={logo} alt="" />
-      // </div>
       
     );
 }

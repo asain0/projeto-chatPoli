@@ -17,9 +17,23 @@
   background-color: green;
   border: 2px solid var(--border-dark);
   border-radius: 5px;
-  /* width: 100vw;  */
-  /* max-width: 100vw;
-  max-height: 100vh; */
-  /* max-height: 1903px; */
-   /* max-width: 979px; */
+}
+
+/* asain apagar */
+@media (min-width: 1920px){
+    
+  .App{
+    --border-dark: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+    .headerMenu{
+       width: 1920px;
+    }
+
 }

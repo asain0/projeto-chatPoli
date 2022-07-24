@@ -1,12 +1,16 @@
 import './Poliselect.css'
 
-function PoliSelect(item) {
-   return ( 
-         <select className='PoliSelect' name="" id="">
-                  <option value="">Poli </option>
-                  <option value="">Asain Anderson Araujo</option>
-         </select> 
-    );
+function PoliSelect({itens}) {
+    console.log(itens)
+
+    return(
+        <select className='PoliSelect' name="" id="">
+        {itens.map(item =>(
+           <option value="">{item .nome} </option>
+        ))}
+        </select>
+
+    )
 }
 
 export default PoliSelect;

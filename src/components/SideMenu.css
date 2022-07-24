@@ -1,4 +1,4 @@
-.x{
+.sideMenu{
    background-color: brown;
    height: 100%;
    /* width: 65px; */
@@ -6,7 +6,7 @@
    border: 1px solid var(--border-dark);
 }
 
-.parte1{
+.sideMenu__pages{
    background-color: var(--bg-main-dark);
    border: 1px solid var(--border-dark);
 
@@ -27,7 +27,7 @@ li{
    align-items: center;
 }
 
-.parte2{
+.sideMenu__info{
    background-color: var(--bg-main-dark);
    align-items: center;
    height: 30%;

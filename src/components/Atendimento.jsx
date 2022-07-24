@@ -5,7 +5,6 @@ import {FiUser} from "react-icons/fi";
 import './atendimento.css'
 
 function Atendimento({atendimento}) {
-   console.log(atendimento);
    return ( 
       <div className="card">
          <div className="card_photo">
