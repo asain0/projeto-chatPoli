@@ -1,12 +1,16 @@
 .card{
-   display: flex;
+   background-color: var(--bg-second-dark);
+   
    width: 98%;
    height: 100%;
    max-height: 80px;
+   
+   margin: 8px 0;
+   
    border: 1px solid var(--bg-second-dark);
    border-radius: 10px;
-   background-color: var(--bg-second-dark);
-   margin: 8px 0;
+   
+   display: flex;
 }
 
 .card_photo{
@@ -18,28 +22,24 @@
 }
 
 .card__client{
+   width: 300px;
+   
+   margin-top: 5px;
+   
    display: flex;
    justify-content: space-between;
-   width: 300px;
-   margin-top: 5px;
 }
 
-
 .card__client_origin *{
-   height: 10px;
    font-size: 12px;
+   
+   height: 10px;
+   
    margin-left: 5px;
 }
 
-.card__attendant{
-   /* display: flex; */
-   /* justify-content: space-between; */
-}
 .card__attendant *{
-   /* height: 50px; */
    font-size: 14px;
-   margin-right: 5px;
-   /* display: flex; */
 
-   /* justify-content: space-between; */
+   margin-right: 5px;
 }

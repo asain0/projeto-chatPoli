@@ -1,5 +1,7 @@
 import PhotoProfile from "./PhotoProfile";
+
 import './ChatHeader.css'
+
 function ChatHeader() {
    return ( 
       <div className="chat__header">

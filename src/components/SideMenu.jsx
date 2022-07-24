@@ -12,42 +12,34 @@ function SideMenu() {
    return ( 
       <div className='sideMenu'>
             <ul className="sideMenu__pages">
-               {/* <button>teste</button> */}
                <li>
-
-               {/* <input type="radio" name="menu" id="home" />
-                  <IoHomeSharp/> */}
-
                   <Polibutton container='sideMenu__pages' icone={
-                     <IoHomeSharp/>
-                  }/>
-
+                     <IoHomeSharp/>                  }/>
                </li>
                <li>
-               <Polibutton container='sideMenu__pages' icone={
-                     <IoIosChatbubbles/>
-                  }/>               </li>
+                  <Polibutton container='sideMenu__pages' icone={
+                     <IoIosChatbubbles/>                  }/>               
+               </li>
                <li>
-               <Polibutton container='sideMenu__pages' icone={
-                     <VscGraphLine/>
-                  }/>               </li>
+                  <Polibutton container='sideMenu__pages' icone={
+                     <VscGraphLine/>                  }/>               
+               </li>
                <li>
-               <Polibutton container='sideMenu__pages' icone={
-                     <BiBuildingHouse/>
-                  }/></li>
+                  <Polibutton container='sideMenu__pages' icone={
+                     <BiBuildingHouse/>                  }/>
+               </li>
                <li>
-               <Polibutton container='sideMenu__pages' icone={
-                     <BsGear/>
-                  }/>
-                  </li>
+                  <Polibutton container='sideMenu__pages' icone={
+                     <BsGear/>                  }/>
+               </li>
                <li>
-               <Polibutton container='sideMenu__pages' icone={
-                     <MdAttachMoney/>
-                  }/></li>
+                  <Polibutton container='sideMenu__pages' icone={
+                     <MdAttachMoney/>                  }/>
+               </li>
                <li>
-               <Polibutton container='sideMenu__pages' icone={
-                     <IoBuildOutline/>
-                  }/></li>
+                  <Polibutton container='sideMenu__pages' icone={
+                     <IoBuildOutline/>                  }/>
+               </li>
             </ul>
 
          <div className="sideMenu__info">
@@ -60,7 +52,7 @@ function SideMenu() {
                <span className='version__number'>
                   v0.15.182
                </span>
-               </div>
+            </div>
          </div>
       </div>
     );

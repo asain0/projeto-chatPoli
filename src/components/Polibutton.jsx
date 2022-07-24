@@ -1,6 +1,5 @@
 import './Polibutton.css'
 
-
 function Polibutton({icone, container, tipo='radio'}) {
    return ( 
       <div className="polibutton">

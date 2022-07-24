@@ -1,6 +1,7 @@
-import './ChatMessages.css'
 import PhotoProfile from './PhotoProfile'
-import messagesBackground from '../img/whatswallpaper.png'
+
+import './ChatMessages.css'
+
 function ChatMessages() {
      const usuarios = [{
       id: 0,
@@ -48,9 +49,6 @@ function ChatMessages() {
       },
    ]
    return ( 
-      
-      
-      
       <div className="chatMessages">
          {mensagens.map(mensagem => (
             <div className={ mensagem.userId ==0?'chatMessages__interaction self__message': 'chatMessages__interaction others__message'
@@ -61,10 +59,8 @@ function ChatMessages() {
                   <div className='chatMessages__interaction_message__time'>{mensagem.time}</div>
                </div>
             </div>
-            
          ))}
       </div>
-
     );
 }
 

@@ -82,7 +82,6 @@ function ChatControl() {
                atendimentos.map(atendimento => <Atendimento atendimento={atendimento}/>)
             }
             
-            
          </div>
       </div>
     );

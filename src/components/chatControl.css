@@ -4,29 +4,33 @@ hr{
 
 .chatControl{
    background-color: var(--bg-main-dark);
-   padding: 5px;
+   
+   width: 30vw;
+   
    border: 2px solid var(--border-dark);
    border-radius: 15px;
-   width: 30vw;
+   padding: 5px;
 }
 
 .chatControl__menu{
+   height: 69px;
+   
    display: flex;
    align-items: center;
    justify-content: space-around;
-   height: 69px;
 }
 
 .chatControl__menu>*{
-   width: 100%;
+   color: var(--icon-collor-dark);
+   
    height: 100%;
+   width: 100%;
    
    border-bottom: 2px solid var(--border-dark);
+   
    display: flex;
-   justify-content: center;
    align-items: center;
-
-   color: var(--icon-collor-dark);
+   justify-content: center;
 }
 
 .chatControl__search{
@@ -38,26 +42,32 @@ hr{
 }
 
 .chatControl__search>*{
-   margin: 5px;
-   border: 2px solid var(--border-dark);
-   border-radius: 5px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
    background-color: var(--bg-second-dark);
    color: var(--icon-collor-dark);
+
    width: 100%;
+
+   margin: 5px;
+
+   border: 2px solid var(--border-dark);
+   border-radius: 5px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .chatControl__search button {
    width: 79px;
 }
+
 .chatControl__search button *{
-   width: 60%;
    height: 60%;
+   width: 60%;
 }
 
 .chatControl__archive{
    min-height: 70%;
+
    overflow-y: scroll;
 }

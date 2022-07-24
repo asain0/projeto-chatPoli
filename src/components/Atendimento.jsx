@@ -28,9 +28,7 @@ function Atendimento({atendimento}) {
             <div className="card__attendant">
                <FiUser/>
                <span>{atendimento.attendant}</span>
-               {/* <span> oooooooooo</span> */}
             </div>
-
          </div>
       </div>
     );

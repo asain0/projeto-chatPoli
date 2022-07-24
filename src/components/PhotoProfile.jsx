@@ -1,5 +1,5 @@
-// import logo from '../.jpg';
 import logo from '../img/dog.png';
+
 import './components.css';
 
 function PhotoProfile() {

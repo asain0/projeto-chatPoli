@@ -5,15 +5,18 @@
   --icon-collor-dark:#fefeff;
   --alert:#ff647c;
   --selected-dark:#17b8c7;
+  
+  box-sizing: border-box;
+  
+  color: var(--icon-collor-dark);
+  
   padding: 0;
   margin: 0px;
-  box-sizing: border-box;
-  color: var(--icon-collor-dark);
 }
-
 
 .App{
   background-color: var(--bg-main-dark);
+
   border: 2px solid var(--border-dark);
   border-radius: 5px;
 }
@@ -38,7 +41,6 @@
     width: 1920px;
     margin: 0 auto;
   }
-
 }
 
 @media (max-width: 720px){
@@ -67,13 +69,15 @@
     opacity: 100% !important;
  }
   .statusbar__actions{
+    background: var(--bg-main-dark);
+    
+    text-align: center;
+
     position: fixed;
     width: 10vh !important;
     height: 100vh;
-    background: var(--bg-main-dark);
     top: 2px;
     left: -10000px;
-    text-align: center;
     transition: all .5s;
     flex-direction: column;
   }
@@ -91,5 +95,4 @@
   .statusbar__promo{
     display: none !important;
   }
-
 }

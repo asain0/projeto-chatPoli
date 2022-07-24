@@ -1,15 +1,12 @@
 import './Poliselect.css'
 
 function PoliSelect({itens}) {
-    console.log(itens)
-
     return(
-        <select className='PoliSelect' name="" id="">
+        <select className='PoliSelect'>
         {itens.map(item =>(
            <option value="">{item .nome} </option>
         ))}
         </select>
-
     )
 }
 

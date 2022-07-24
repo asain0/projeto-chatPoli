@@ -10,7 +10,6 @@ import {AiOutlineMenu} from 'react-icons/ai';
 import ThemeSelector from './ThemeSelector'
 import PoliSelect from './Poliselect'
 
-
 import './HeaderMenu.css'
 
 function HeaderMenu() {
@@ -43,7 +42,6 @@ function HeaderMenu() {
          <a className="headerMenu__logo" href="https://polichat.com.br/" >
             <img  src={logo_poli} alt="" />
          </a>
-
 
          <div className="headerMenu_statusbar">
 
@@ -79,7 +77,6 @@ function HeaderMenu() {
                </li>
                <li>
                   <div className="statusbar__remoteAccess fullScreen">
-                  {/* <Polibutton icone={<RiComputerLine/>} container='statusbar__remoteAccess'/> */}
                      <RiComputerLine/>
                   </div>
                </li>
@@ -95,9 +92,7 @@ function HeaderMenu() {
             </ul>
 
             <label htmlFor="menuHeader" className='headerMenu_statusbar__menuMobile'><AiOutlineMenu/></label>
-
          </div>
-      
       </nav>
     );
    }

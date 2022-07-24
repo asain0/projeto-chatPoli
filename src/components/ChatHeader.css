@@ -1,8 +1,8 @@
 .chat__header{
+   height: 10%;
+
    display: flex;
    justify-content: space-between;
-   /* background-color: var(--bg-main-dark); */
-   height: 10%;
 }
 
 .chat__header *{
@@ -12,10 +12,7 @@
 .chat__header__client, .chat__header__atendente{
    display: flex;
    align-items: center;
-   display: flex;
-   align-items: center;
 }
-
 
 .chat__header__atendente a{
    font-weight: bold;

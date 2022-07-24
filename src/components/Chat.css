@@ -1,12 +1,14 @@
 .chat{
+   background-color: var(--bg-main-dark);
+
    height: 100%;
    width: 100%;
-   margin-left: 18px;
+
    border-radius: 15px;
-   /* border: 2px solid #3b4757; */
    border: 2px solid var(--border-dark);
-   /* padding: 5px; */
-   background-color: var(--bg-main-dark);
+   
+   margin-left: 18px;
+
    display: flex;
    flex-direction: column;
 }
