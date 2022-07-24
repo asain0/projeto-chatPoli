@@ -24,7 +24,7 @@
    
 }
 
-.statusbar{
+.headerMenu_statusbar{
    background-color: var(--bg-main-dark);
    display: flex;
    justify-content: space-between;
@@ -32,52 +32,78 @@
    align-items: center;
    width: 95%;
 }
-.polichat {
+
+#menuHeader{
+   opacity: 0;
+}
+   
+.headerMenu_statusbar__menuMobile{
+   margin-right: 10px;
+   opacity: 0;
+}
+
+
+.statusbar__polichat {
 height: 80%;
 align-self: center;
 margin-left: 0.5rem;
+width: 10%;
 }
 
-.statusbar__appName{
+.statusbar__accessConfig{
    display: flex;
+   width: 35%;
+   height: 100%;
 }
+.statusbar__actions{
+   width: 55%;
+   height: 100%;
+   float: right;
+}
+
+/* statusbar__accessConfig */
 
 .statusbar__depto{
    display: flex;
    justify-content: space-between;
+   width: 45%;
 }
-
+/* 
 .statusbar__depto__profile{
    height: 2em;
    width: 2em;
    background-color: var(--border-dark);
    border-radius: 50%;
-   /* padding: 10%; */
    margin: auto;
    font-weight: bold;
    font-size: 20px;
    display: flex;
    justify-content: center;
    align-items: center;
-}
+} */
 .statusbar__whatsapp{
    display: flex;
    flex-direction: column;
    justify-content: center;
+   width: 5%;
 }
 .statusbar__whatsapp *{
-   color: greenyellow;
+   color: rgb(47, 255, 92);
 }
 
-.statusbar__chanels *{
-   height: 25px;
+.poliSelect{
+   display: flex;
+   justify-content: center;
+   width: 45%;
+
 }
 
-.statusbar__promo{
+
+.statusbar__actions .statusbar__promo{
    display: flex;
 }
 
-.statusbar__promo__button{
+.statusbar__actions .statusbar__promo__button{
    color: white;
    background-color: #fccf58;
    border: none;
@@ -86,11 +112,14 @@ margin-left: 0.5rem;
    width: 148.5px;
    margin: auto;
    font-size: 16px;
-
-
 }
 
-.statusbar__connect{
+.statusbar__actions .statusbar__chanels{
+   display: flex;
+   max-height: 35px;
+}
+
+.statusbar__actions .statusbar__connect{
    display: flex;
 }
 
@@ -105,4 +134,6 @@ margin-left: 0.5rem;
    display: flex;
 }
 
-/* @media (min-width:1980px){ */
+.statusbar__actions{
+   display: flex;
+}

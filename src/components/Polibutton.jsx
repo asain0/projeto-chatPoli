@@ -1,10 +1,10 @@
 import './Polibutton.css'
 
 
-function Polibutton({icone, container}) {
+function Polibutton({icone, container, tipo='radio'}) {
    return ( 
       <div className="polibutton">
-         <input type="radio" name={container} />
+         <input type={tipo} name={container} id={container}/>
          {icone}
       </div>
     );

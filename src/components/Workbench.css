@@ -8,14 +8,6 @@
  section{
    background-color: var(--bg-second-dark);
    display: flex;
-   padding: 18px;
+   /* padding: 18px; */
    width: 95%;
  }
- 
-
- @media (min-width:1980px){
-  .Workbench{
-
-     /* width: 1980px; */
-  }
-}

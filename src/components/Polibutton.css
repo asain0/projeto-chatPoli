@@ -21,3 +21,9 @@ input[type='radio']{
 input[type='radio']:checked{
    opacity: 100%;
 }
+
+.polibutton:hover, .polibutton.active{
+   background-color: var(--selected-dark);
+   border-radius: 15px;
+   transition: 3s;
+}

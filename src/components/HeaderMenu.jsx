@@ -5,11 +5,13 @@ import {RiComputerLine} from 'react-icons/ri';
 import {BiWorld} from 'react-icons/bi';
 import {GiBugleCall} from 'react-icons/gi';
 import {BsWhatsapp} from 'react-icons/bs';
+import {AiOutlineMenu} from 'react-icons/ai';
 
 import ThemeSelector from './ThemeSelector'
 import PoliSelect from './Poliselect.jsx'
 
 import './HeaderMenu.css'
+import Polibutton from './Polibutton';
 
 function HeaderMenu() {
    const departamentos = [{
@@ -41,58 +43,63 @@ function HeaderMenu() {
          <a className="headerMenu__logo" href="https://polichat.com.br/" >
             <img  src={logo_poli} alt="" />
          </a>
-         <div className="statusbar">
-            <img className='polichat' src={polichat} alt="" />
 
-            <div className="statusbar__depto">
-               <PoliSelect itens={departamentos}/>
-            </div>
 
-            <div className="statusbar__whatsapp">
-               <BsWhatsapp/>
-            </div>
+         <div className="headerMenu_statusbar">
 
-            <div className='PoliSelect less' name="" id="">
-               <PoliSelect itens={canais}/>
-            </div>
-
-            {/* <select className='PoliSelect less' name="" id="">
-               <option value="">
-                  <div className="statusbar__canal">
-                     <div className="statusbar__canal__info">
-                        <div className="statusbar__canal__info__nome">
-                           <span>Canal Canal ADR 0001</span>
-                        </div>
-                        <div className="statusbar__canal__info__calls">
-                           <span className="statusbar__canal__info__calls__current">90</span>
-                           <span className="statusbar__canal__info__calls__goal">/1000</span>
-                           <span className="statusbar__canal__info__calls__medida">Contatos-dia</span>
-                        </div>
-                     </div>
-                  </div>
-               </option>
-            </select> */}
+            <input type="checkbox" className='headerMenu_statusbar__checkMenuMobile' name="menuHeader" id="menuHeader" />
             
-            <div className="statusbar__promo">
-               <button className="statusbar__promo__button">Indique e ganhe</button>
-            </div>
-            <div className="statusbar__chanels">
-               <img src={chanels} alt="" />
-            </div>
-            <div className="statusbar__remoteAccess">
-               <RiComputerLine/>
+            <img className='statusbar__polichat' src={polichat} alt="" />
+
+            <div className="statusbar__accessConfig">
+               
+               <div className="statusbar__depto">
+                  <PoliSelect itens={departamentos}/>
+               </div>
+
+               <div className="statusbar__whatsapp fullScreen">
+                  <BsWhatsapp/>
+               </div>
+
+               <div className='poliSelect' name="" id="">
+                  <PoliSelect itens={canais}/>
+               </div>
             </div>
 
-            <div className="statusbar__InternetConnection"><BiWorld/></div>
-            <div className="statusbar__autofalante"><GiBugleCall/></div>
-            <div className="statusbar__theme">
-                  <ThemeSelector/>
-            </div>
+            <ul className='statusbar__actions fullScreen'>
+               <li>
+                  <div className="statusbar__promo fullScreen">
+                     <button className="statusbar__promo__button">Indique e ganhe</button>
+                  </div>
+               </li>
+               <li>
+                  <div className="statusbar__chanels fullScreen">
+                     <img src={chanels} alt="" />
+                  </div>
+               </li>
+               <li>
+                  <div className="statusbar__remoteAccess fullScreen">
+                  {/* <Polibutton icone={<RiComputerLine/>} container='statusbar__remoteAccess'/> */}
+                     <RiComputerLine/>
+                  </div>
+               </li>
+               <li>
+                  <div className="statusbar__InternetConnection fullScreen"><BiWorld/></div>
+               </li>
+               <li>
+                  <div className="statusbar__autofalante fullScreen"><GiBugleCall/></div>
+               </li>
+               <li>
+                  <div className="statusbar__theme fullScreen"><ThemeSelector/>    </div>
+               </li>
+            </ul>
+
+            <label htmlFor="menuHeader" className='headerMenu_statusbar__menuMobile'><AiOutlineMenu/></label>
 
          </div>
       
       </nav>
     );
-}
+   }
 
 export default HeaderMenu;

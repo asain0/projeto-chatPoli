@@ -19,7 +19,7 @@
   border-radius: 5px;
 }
 
-/* asain apagar */
+
 @media (min-width: 1920px){
     
   .App{
@@ -32,8 +32,68 @@
     margin: 0 auto;
   }
 
-    .headerMenu{
-       width: 1920px;
+}
+
+@media (max-width: 720px){
+
+  .menuHeader{
+    display: block;
+    float: right;
+    
     }
+
+  *{
+    --bg-main-dark: #004cd8;
+  }
+
+  .App{
+    min-width: 720px;
+  }
+
+  .chatControl{
+    display: none;
+  }
+  .chatSection{
+    padding: 0 !important;
+  }
+  .chat{
+    margin: 0 !important;
+  }
+
+  .headerMenu_statusbar__menuMobile{
+    margin-right: 10px;
+    opacity: 100% !important;
+ }
+  .statusbar__actions{
+    position: fixed;
+    width: 10vh !important;
+    height: 100vh;
+    background: var(--bg-main-dark);
+    top: 2px;
+    left: -10000px;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* padding: 0 auto 10% 0 !important; */
+  }
+  .statusbar__actions li{
+    height: 10% !important;
+  }
+  .statusbar__actions li *{
+    /* height: 50% */
+  }
+
+  #menuHeader:checked ~ ul{
+    left: 0;
+  }
+
+  .statusbar__theme{
+    /* flex-direction: column !important; */
+    transform: rotate(90deg);
+  }
+  .statusbar__promo{
+    display: none !important;
+  }
 
 }

@@ -4,7 +4,7 @@ import Chat from '../components/Chat';
 import './ChatSection.css'
 function ChatSection() {
    return ( 
-         <section>
+         <section className='chatSection'>
             <ChatControl/>
             <Chat />
          </section>
