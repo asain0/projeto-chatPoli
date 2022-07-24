@@ -1,12 +1,11 @@
-
-import Atendimento from "./Atendimento";
-import Polibutton from "./Polibutton";
-
 import {GoMail} from "react-icons/go";
 import {CgProfile} from "react-icons/cg";
 import {FiFilter} from "react-icons/fi";
 import {BsChatDots} from "react-icons/bs";
 import {IoIosChatbubbles} from "react-icons/io";
+
+import Atendimento from "./Atendimento";
+import Polibutton from "./Polibutton";
 
 import "./chatControl.css"
 
@@ -67,14 +66,9 @@ function ChatControl() {
       <div className="chatControl">
 
          <div className="chatControl__menu">
-
             <Polibutton container='chatControl__menu_itens' icone={<IoIosChatbubbles/>}/>
             <Polibutton container='chatControl__menu_itens' icone={<BsChatDots/>}/>
             <Polibutton container='chatControl__menu_itens' icone={<GoMail/>}/>
-
-            {/* <div className="chatControl__menu__link"><IoIosChatbubbles/></div>
-            <div className="chatControl__menu__link"><BsChatDots/></div>
-            <div className="chatControl__menu__link"><GoMail/></div> */}
          </div>
 
          <div className="chatControl__search">

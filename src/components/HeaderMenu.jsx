@@ -8,10 +8,10 @@ import {BsWhatsapp} from 'react-icons/bs';
 import {AiOutlineMenu} from 'react-icons/ai';
 
 import ThemeSelector from './ThemeSelector'
-import PoliSelect from './Poliselect.jsx'
+import PoliSelect from './Poliselect'
+
 
 import './HeaderMenu.css'
-import Polibutton from './Polibutton';
 
 function HeaderMenu() {
    const departamentos = [{

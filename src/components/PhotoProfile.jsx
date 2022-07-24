@@ -5,7 +5,6 @@ import './components.css';
 function PhotoProfile() {
    return ( 
          <img className='photoProfile' src={logo} alt="" />
-      
     );
 }
 

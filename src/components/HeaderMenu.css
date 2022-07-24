@@ -1,17 +1,15 @@
-.less{
-   width: 10% !important;
-}
-
 .headerMenu{
    display: flex;
    justify-content: center;
    /* height: 58px; */
    height: 8vh;
+   width: 100%;
 }
 
 .headerMenu__logo{
    /* width: 65px; */
-   width: 5%;
+   min-width: 5%;
+   
    background-color: var(--bg-main-dark);
    margin: 0 auto;
    display: flex;
