@@ -1,4 +1,4 @@
-import ChatControl from '../components/ChatControl';
+// import ChatControl from '../components/ChatControl';
 import SideMenu from '../components/SideMenu'
 import ChatSection from '../components/ChatSection'
 

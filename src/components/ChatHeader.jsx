@@ -13,7 +13,7 @@ function ChatHeader() {
 
          <div className="chat__header__atendente">
             <PhotoProfile/>
-            <a href="#" className="chat__header__atendente__menu">...</a>
+            <a href="https://github.com/asain0/projeto-chatPoli/blob/main/README.md" className="chat__header__atendente__menu">...</a>
          </div>
 
       </div>

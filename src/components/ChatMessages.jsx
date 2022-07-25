@@ -3,19 +3,19 @@ import PhotoProfile from './PhotoProfile'
 import './ChatMessages.css'
 
 function ChatMessages() {
-     const usuarios = [{
-      id: 0,
-      nome: 'Anderson',
-      tipo: 'Atendente',
-      foto: '../img/dog.png'
-     },
-     {
-      id: 1,
-      nome: 'Leandro',
-      tipo: 'Cliente',
-      foto: '../img/husky.png'
-     }
-   ];
+   //   const usuarios = [{
+   //    id: 0,
+   //    nome: 'Anderson',
+   //    tipo: 'Atendente',
+   //    foto: '../img/dog.png'
+   //   },
+   //   {
+   //    id: 1,
+   //    nome: 'Leandro',
+   //    tipo: 'Cliente',
+   //    foto: '../img/husky.png'
+   //   }
+   // ];
    const mensagens = [
       {
          userId:0,
@@ -51,7 +51,7 @@ function ChatMessages() {
    return ( 
       <div className="chatMessages">
          {mensagens.map(mensagem => (
-            <div className={ mensagem.userId ==0?'chatMessages__interaction self__message': 'chatMessages__interaction others__message'
+            <div className={ mensagem.userId ===0?'chatMessages__interaction self__message': 'chatMessages__interaction others__message'
             }>
                <PhotoProfile/>
                <div className="chatMessages__interaction_message">
